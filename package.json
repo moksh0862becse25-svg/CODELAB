@@ -1,0 +1,61 @@
+{
+  "name": "coding-practice-lab",
+  "version": "4.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"node server.cjs\"",
+    "build": "vite build",
+    "start": "node server.cjs",
+    "app": "electron .",
+    "dist:win": "npm run build && electron-builder --win nsis portable"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "concurrently": "^9.1.2",
+    "electron": "^37.2.0",
+    "electron-builder": "^26.0.12",
+    "vite": "^6.1.0"
+  },
+  "main": "electron.cjs",
+  "build": {
+    "appId": "com.codingpracticelab.app",
+    "productName": "Coding Practice Lab",
+    "asar": true,
+    "files": [
+      "dist/**/*",
+      "public/**/*",
+      "server.cjs",
+      "electron.cjs",
+      "package.json",
+      "node_modules/**/*"
+    ],
+    "extraResources": [],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "artifactName": "Coding-Practice-Lab-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "portable": {
+      "artifactName": "Coding-Practice-Lab-${version}-portable.${ext}"
+    },
+    "directories": {
+      "output": "release"
+    }
+  }
+}

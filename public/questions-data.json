@@ -1,0 +1,512 @@
+[
+  {
+    "id": 1,
+    "title": "Reverse a String",
+    "difficulty": "Easy",
+    "description": "Reverse the given string.",
+    "function": "reverseString(str)",
+    "samples": [
+      {
+        "input": "hello",
+        "expected": "olleh"
+      },
+      {
+        "input": "world",
+        "expected": "dlrow"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Check Palindrome",
+    "difficulty": "Easy",
+    "description": "Return true if the string reads the same forward and backward.",
+    "function": "isPalindrome(str)",
+    "samples": [
+      {
+        "input": "madam",
+        "expected": "true"
+      },
+      {
+        "input": "hello",
+        "expected": "false"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Count Vowels",
+    "difficulty": "Easy",
+    "description": "Count the vowels (a, e, i, o, u) in the string.",
+    "function": "countVowels(str)",
+    "samples": [
+      {
+        "input": "education",
+        "expected": "5"
+      },
+      {
+        "input": "hello",
+        "expected": "2"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Count Consonants",
+    "difficulty": "Easy",
+    "description": "Count alphabetic characters that are not vowels.",
+    "function": "countConsonants(str)",
+    "samples": [
+      {
+        "input": "hello",
+        "expected": "3"
+      },
+      {
+        "input": "education",
+        "expected": "3"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Count Digits",
+    "difficulty": "Easy",
+    "description": "Count numeric digits in the string.",
+    "function": "countDigits(str)",
+    "samples": [
+      {
+        "input": "abc123xyz45",
+        "expected": "5"
+      },
+      {
+        "input": "hello2026",
+        "expected": "4"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Count Spaces",
+    "difficulty": "Easy",
+    "description": "Count the number of space characters.",
+    "function": "countSpaces(str)",
+    "samples": [
+      {
+        "input": "hello world java",
+        "expected": "2"
+      },
+      {
+        "input": "a b c",
+        "expected": "2"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Convert to Uppercase",
+    "difficulty": "Easy",
+    "description": "Convert lowercase English letters to uppercase without using toUpperCase().",
+    "function": "convertToUpper(str)",
+    "samples": [
+      {
+        "input": "hello java",
+        "expected": "HELLO JAVA"
+      },
+      {
+        "input": "coding",
+        "expected": "CODING"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Convert to Lowercase",
+    "difficulty": "Easy",
+    "description": "Convert uppercase English letters to lowercase without using toLowerCase().",
+    "function": "convertToLower(str)",
+    "samples": [
+      {
+        "input": "HELLO JAVA",
+        "expected": "hello java"
+      },
+      {
+        "input": "CODING",
+        "expected": "coding"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Find Length Without length()",
+    "difficulty": "Easy",
+    "description": "Return the number of characters without using length().",
+    "function": "findLength(str)",
+    "samples": [
+      {
+        "input": "Programming",
+        "expected": "11"
+      },
+      {
+        "input": "hello",
+        "expected": "5"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Count Occurrence of Character",
+    "difficulty": "Easy",
+    "description": "Count how many times the given character occurs.",
+    "function": "countCharacter(str, ch)",
+    "samples": [
+      {
+        "input": "programming\ng",
+        "expected": "2"
+      },
+      {
+        "input": "banana\na",
+        "expected": "3"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "First Occurrence",
+    "difficulty": "Easy",
+    "description": "Return the zero-based index of the first occurrence, or -1.",
+    "function": "firstOccurrence(str, ch)",
+    "samples": [
+      {
+        "input": "programming\ng",
+        "expected": "3"
+      },
+      {
+        "input": "hello\nz",
+        "expected": "-1"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Last Occurrence",
+    "difficulty": "Easy",
+    "description": "Return the zero-based index of the last occurrence, or -1.",
+    "function": "lastOccurrence(str, ch)",
+    "samples": [
+      {
+        "input": "programming\ng",
+        "expected": "10"
+      },
+      {
+        "input": "banana\na",
+        "expected": "5"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Remove Spaces",
+    "difficulty": "Easy",
+    "description": "Remove every space from the string.",
+    "function": "removeSpaces(str)",
+    "samples": [
+      {
+        "input": "java is easy",
+        "expected": "javaiseasy"
+      },
+      {
+        "input": "a b c",
+        "expected": "abc"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Count Words",
+    "difficulty": "Easy",
+    "description": "Count words separated by one or more spaces.",
+    "function": "countWords(str)",
+    "samples": [
+      {
+        "input": "Java is very easy",
+        "expected": "4"
+      },
+      {
+        "input": "hello world",
+        "expected": "2"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Reverse Each Word",
+    "difficulty": "Medium",
+    "description": "Reverse every word but keep word order unchanged.",
+    "function": "reverseWords(str)",
+    "samples": [
+      {
+        "input": "hello java world",
+        "expected": "olleh avaj dlrow"
+      },
+      {
+        "input": "code fast now",
+        "expected": "edoc tsaf won"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Reverse Order of Words",
+    "difficulty": "Medium",
+    "description": "Reverse word order while keeping each word unchanged.",
+    "function": "reverseWordOrder(str)",
+    "samples": [
+      {
+        "input": "Java is powerful",
+        "expected": "powerful is Java"
+      },
+      {
+        "input": "hello world",
+        "expected": "world hello"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Remove Duplicate Characters",
+    "difficulty": "Medium",
+    "description": "Keep only the first occurrence of each character.",
+    "function": "removeDuplicates(str)",
+    "samples": [
+      {
+        "input": "programming",
+        "expected": "progamin"
+      },
+      {
+        "input": "banana",
+        "expected": "ban"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Find Duplicate Characters",
+    "difficulty": "Medium",
+    "description": "Return duplicate characters in order of first duplicate detection.",
+    "function": "findDuplicates(str)",
+    "samples": [
+      {
+        "input": "programming",
+        "expected": "rg"
+      },
+      {
+        "input": "banana",
+        "expected": "an"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Character Frequency",
+    "difficulty": "Easy",
+    "description": "Return the frequency of the specified character.",
+    "function": "frequency(str, ch)",
+    "samples": [
+      {
+        "input": "banana\na",
+        "expected": "3"
+      },
+      {
+        "input": "hello\nl",
+        "expected": "2"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Maximum Occurring Character",
+    "difficulty": "Medium",
+    "description": "Return the character with the highest frequency.",
+    "function": "maxOccurringChar(str)",
+    "samples": [
+      {
+        "input": "success",
+        "expected": "s"
+      },
+      {
+        "input": "banana",
+        "expected": "a"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Check Anagram",
+    "difficulty": "Medium",
+    "description": "Return true when two strings contain the same characters with the same frequencies.",
+    "function": "isAnagram(str1, str2)",
+    "samples": [
+      {
+        "input": "listen\nsilent",
+        "expected": "true"
+      },
+      {
+        "input": "hello\nworld",
+        "expected": "false"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Remove Particular Character",
+    "difficulty": "Easy",
+    "description": "Remove every occurrence of the given character.",
+    "function": "removeCharacter(str, ch)",
+    "samples": [
+      {
+        "input": "banana\na",
+        "expected": "bnn"
+      },
+      {
+        "input": "hello\nl",
+        "expected": "heo"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Replace Character",
+    "difficulty": "Easy",
+    "description": "Replace every occurrence of oldChar with newChar without using replace().",
+    "function": "replaceCharacter(str, oldChar, newChar)",
+    "samples": [
+      {
+        "input": "banana\na\no",
+        "expected": "bonono"
+      },
+      {
+        "input": "hello\nl\na",
+        "expected": "healo"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Check Only Digits",
+    "difficulty": "Easy",
+    "description": "Return true if every character is a digit.",
+    "function": "onlyDigits(str)",
+    "samples": [
+      {
+        "input": "123456",
+        "expected": "true"
+      },
+      {
+        "input": "123a56",
+        "expected": "false"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "title": "First Non-Repeating Character",
+    "difficulty": "Medium",
+    "description": "Return the first character whose frequency is exactly one.",
+    "function": "firstNonRepeating(str)",
+    "samples": [
+      {
+        "input": "swiss",
+        "expected": "w"
+      },
+      {
+        "input": "aabbc",
+        "expected": "c"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "title": "First Repeating Character",
+    "difficulty": "Medium",
+    "description": "Return the first character that appears more than once.",
+    "function": "firstRepeating(str)",
+    "samples": [
+      {
+        "input": "programming",
+        "expected": "r"
+      },
+      {
+        "input": "swiss",
+        "expected": "s"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Check String Rotation",
+    "difficulty": "Medium",
+    "description": "Return true if str2 is a rotation of str1.",
+    "function": "isRotation(str1, str2)",
+    "samples": [
+      {
+        "input": "abcd\ncdab",
+        "expected": "true"
+      },
+      {
+        "input": "abcd\nacbd",
+        "expected": "false"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Remove Vowels",
+    "difficulty": "Easy",
+    "description": "Remove all vowels.",
+    "function": "removeVowels(str)",
+    "samples": [
+      {
+        "input": "education",
+        "expected": "dctn"
+      },
+      {
+        "input": "hello",
+        "expected": "hll"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Count Uppercase and Lowercase",
+    "difficulty": "Medium",
+    "description": "Print the number of uppercase and lowercase English letters.",
+    "function": "countCase(str)",
+    "samples": [
+      {
+        "input": "Java Programming",
+        "expected": "Uppercase = 2\nLowercase = 14"
+      },
+      {
+        "input": "ABC xyz",
+        "expected": "Uppercase = 3\nLowercase = 3"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Palindrome Ignoring Spaces",
+    "difficulty": "Medium",
+    "description": "Return true if the string is a palindrome after ignoring spaces.",
+    "function": "isPalindromeIgnoreSpaces(str)",
+    "samples": [
+      {
+        "input": "n u r s e s r u n",
+        "expected": "true"
+      },
+      {
+        "input": "hello world",
+        "expected": "false"
+      }
+    ]
+  }
+]
